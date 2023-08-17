@@ -1,6 +1,6 @@
 
 ### 视频课程进度
-https://www.youtube.com/watch?v=2pv0Fbo-7ms&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=8
+https://www.youtube.com/watch?v=FBbPWSOQ0-w&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=10
 
 #### 文本课程进度：
 https://learnopengl-cn.github.io/01%20Getting%20started/02%20Creating%20a%20window/
