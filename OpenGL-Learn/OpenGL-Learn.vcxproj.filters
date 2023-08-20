@@ -33,6 +33,9 @@
     <ClCompile Include="src\Shader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\Dependencies\Glad\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shaders\Basic.shader" />
