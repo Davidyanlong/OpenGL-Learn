@@ -23,6 +23,16 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
+float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f,
+	 0.0f,  0.5f, 0.0f
+};
+
+unsigned int VBO;
+//glGenBuffers(1, &VBO);
+//glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
