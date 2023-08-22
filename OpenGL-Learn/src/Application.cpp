@@ -28,10 +28,12 @@ int main(void)
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+	const float width = 960.0f;
+	const float height = 540.0f;
 
 
 	/* Create a windowed mode window and its OpenGL context */
-	window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+	window = glfwCreateWindow(width, height, "Hello World", NULL, NULL);
 	if (!window)
 	{
 		glfwTerminate();
@@ -48,10 +50,10 @@ int main(void)
 	std::cout << glGetString(GL_VERSION) << std::endl;
 	{
 		float position[] = {
-			-0.5f, -0.5, 0.0f, 1.0f,   // 0
-			0.5f, -0.5f, 1.0f, 1.0f,   // 1
-			0.5f, 0.5f,  1.0f, 0.0f,   // 2 
-			-0.5f, 0.5f, 0.0f, 0.0f    // 3
+			100.0f, 100.0f,  0.0f, 0.0f,   // 0
+			200.0f,  100.0f, 1.0f, 0.0f,   // 1
+			200.0f,   200.0f,  1.0f, 1.0f,   // 2 
+			100.0f, 200.0f, 0.0f, 1.0f    // 3
 		};
 
 		unsigned int indices[] = {
@@ -72,12 +74,16 @@ int main(void)
 
 		IndexBuffer ib(indices, 6);
 
-		glm::mat4 proj = glm::ortho(-2.0f, 2.0f, -1.5f, 1.5f, -1.0f, 1.0f);
+		glm::mat4 proj = glm::ortho(0.0f, width, 0.0f, height, -1.0f, 1.0f);
+		glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(-100, 0, 0));
+		glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(100, 200, 0));
+
+		glm::mat4 mvp = proj * view * model;
 
 		Shader shader("res/shaders/Basic.shader");
 		shader.Bind();
 		shader.SetUniform4f("u_Color", 0.2f, 0.3f, 0.8f, 1.0f);
-		shader.SetUniformMat4f("u_MVP", proj);
+		shader.SetUniformMat4f("u_MVP", mvp);
 
 		Texture texture("res/textures/ChernoLogo.png");
 
