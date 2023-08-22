@@ -1,6 +1,6 @@
 
 ### 视频课程进度
-https://www.youtube.com/watch?v=x_Ph2cuEWrE&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=21
+https://www.youtube.com/watch?v=7D8lLbp9_rQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=23
 
 #### 文本课程进度：
 https://learnopengl-cn.github.io/01%20Getting%20started/02%20Creating%20a%20window/
@@ -22,6 +22,8 @@ https://www.opengl.org/
 https://registry.khronos.org/OpenGL/index_gl.php
 
 https://github.com/g-truc/glm
+
+https://github.com/ocornut/imgui
 
 
 
