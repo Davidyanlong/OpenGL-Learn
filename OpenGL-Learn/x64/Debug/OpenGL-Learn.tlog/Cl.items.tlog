@@ -1,9 +1,0 @@
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\Application.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\Application.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\IndexBuffer.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\IndexBuffer.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\Renderer.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\Renderer.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\Shader.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\Shader.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\Texture.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\Texture.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\vendor\glm\detail\glm.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\glm.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\vendor\stb_image\stb_image.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\stb_image.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\VertexArray.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\VertexArray.obj
-D:\DemoC++\OpenGL-Learn\OpenGL-Learn\src\VertexBuffer.cpp;D:\DemoC++\OpenGL-Learn\OpenGL-Learn\x64\Debug\VertexBuffer.obj
