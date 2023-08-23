@@ -3,7 +3,9 @@
 https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=17
 
 #### 文本课程进度：
-https://learnopengl-cn.github.io/01%20Getting%20started/04%20Hello%20Triangle/
+https://learnopengl-cn.github.io/01%20Getting%20started/05%20Shaders/
+
+https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/1.getting_started
 
 https://learnopengl-cn.github.io/   
 https://learnopengl.com/   
