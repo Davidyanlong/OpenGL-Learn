@@ -142,15 +142,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\shader_class\shaders_class.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\shaders\Basic.shader" />
-    <None Include="src\shader_class\shader.fs" />
-    <None Include="src\shader_class\shader.vs" />
+    <ClCompile Include="src\textures_combined\textures_combined.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\shader_s.h" />
+    <ClInclude Include="includes\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\textures\awesomeface.png" />
+    <Image Include="res\textures\container.jpg" />
+    <Image Include="res\textures\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\textures_combined\texture.fs" />
+    <None Include="src\textures_combined\texture.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
