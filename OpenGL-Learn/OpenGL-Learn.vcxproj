@@ -141,10 +141,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\coordinate_systems_multiple\coordinate_systems_multiple.cpp" />
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\transformations\transformations.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="includes\learnopengl\shader_m.h" />
     <ClInclude Include="includes\learnopengl\shader_s.h" />
     <ClInclude Include="includes\stb_image.h" />
   </ItemGroup>
@@ -152,10 +153,6 @@
     <Image Include="res\textures\awesomeface.png" />
     <Image Include="res\textures\container.jpg" />
     <Image Include="res\textures\wall.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\transformations\transform.fs" />
-    <None Include="src\transformations\transform.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\transformations\transformations.cpp">
+    <ClCompile Include="src\coordinate_systems_multiple\coordinate_systems_multiple.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -27,6 +27,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="includes\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\learnopengl\shader_m.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -40,9 +43,5 @@
     <Image Include="res\textures\awesomeface.png">
       <Filter>资源文件</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\transformations\transform.fs" />
-    <None Include="src\transformations\transform.vs" />
   </ItemGroup>
 </Project>
