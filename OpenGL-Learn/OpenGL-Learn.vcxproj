@@ -141,10 +141,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\coordinate_systems_multiple\coordinate_systems_multiple.cpp" />
+    <ClCompile Include="src\camera_class\camera_class.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="includes\learnopengl\camera.h" />
     <ClInclude Include="includes\learnopengl\shader_m.h" />
     <ClInclude Include="includes\learnopengl\shader_s.h" />
     <ClInclude Include="includes\stb_image.h" />

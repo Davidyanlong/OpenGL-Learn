@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\coordinate_systems_multiple\coordinate_systems_multiple.cpp">
+    <ClCompile Include="src\camera_class\camera_class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="includes\learnopengl\shader_m.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\learnopengl\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
