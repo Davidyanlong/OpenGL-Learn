@@ -29,4 +29,4 @@ x64
 #*.njsproj
 #*.sln
 *.sw?
-*.vs
+.vs/*
