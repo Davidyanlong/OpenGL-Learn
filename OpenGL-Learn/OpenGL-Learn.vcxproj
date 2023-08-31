@@ -141,8 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\basic_lighting_specular\basic_lighting_specular.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\materials\materials.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -156,10 +156,10 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\basic_lighting_specular\basic_lighting.frag" />
-    <None Include="src\basic_lighting_specular\basic_lighting.vert" />
-    <None Include="src\basic_lighting_specular\light_cube.frag" />
-    <None Include="src\basic_lighting_specular\light_cube.vert" />
+    <None Include="src\materials\materials.frag" />
+    <None Include="src\materials\materials.vert" />
+    <None Include="src\materials\light_cube.frag" />
+    <None Include="src\materials\light_cube.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
