@@ -1,9 +1,9 @@
 
-### ÊÓÆµ¿Î³Ì½ø¶È
+### ï¿½ï¿½Æµï¿½Î³Ì½ï¿½ï¿½ï¿½
 https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=17
 
-#### ÎÄ±¾¿Î³Ì½ø¶È£º
-https://learnopengl-cn.github.io/02%20Lighting/03%20Materials/
+#### ï¿½Ä±ï¿½ï¿½Î³Ì½ï¿½ï¿½È£ï¿½
+https://learnopengl-cn.github.io/02%20Lighting/05%20Light%20casters/
 
 https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/2.lighting/3.1.materials
 
@@ -12,7 +12,7 @@ https://learnopengl.com/
 https://github.com/JoeyDeVries/LearnOpenGL 
 https://www.learncpp.com/
 
-### ËùÓÐÊ¹ÓÃ¹ýµÄÍøÕ¾
+### ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾
 
 https://docs.gl/
 
