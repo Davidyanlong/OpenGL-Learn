@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\camera_class\camera_class.cpp">
+    <ClCompile Include="src\basic_lighting_specular\basic_lighting_specular.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -46,5 +46,11 @@
     <Image Include="res\textures\awesomeface.png">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\basic_lighting_specular\basic_lighting.frag" />
+    <None Include="src\basic_lighting_specular\basic_lighting.vert" />
+    <None Include="src\basic_lighting_specular\light_cube.frag" />
+    <None Include="src\basic_lighting_specular\light_cube.vert" />
   </ItemGroup>
 </Project>

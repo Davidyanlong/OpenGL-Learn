@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GG
 #### 文本课程进度：
 https://learnopengl-cn.github.io/02%20Lighting/03%20Materials/
 
-https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/2.lighting
+https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/2.lighting/3.1.materials
 
 https://learnopengl-cn.github.io/   
 https://learnopengl.com/   
