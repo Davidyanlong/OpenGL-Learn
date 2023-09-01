@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\lighting_maps_specular_map\lighting_maps_diffuse.cpp" />
+    <ClCompile Include="src\multiple_lights\multiple_lights.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -157,6 +157,12 @@
     <Image Include="res\textures\container2_specular.png" />
     <Image Include="res\textures\matrix.jpg" />
     <Image Include="res\textures\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\multiple_lights\multiple_lights.frag" />
+    <None Include="src\multiple_lights\multiple_lights.vert" />
+    <None Include="src\multiple_lights\light_cube.frag" />
+    <None Include="src\multiple_lights\light_cube.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
