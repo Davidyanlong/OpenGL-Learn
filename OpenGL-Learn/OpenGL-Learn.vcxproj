@@ -141,8 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\depth_testing_view\depth_testing_view.cpp" />
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\model_loading\model_loading.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -158,12 +158,10 @@
     <Image Include="res\textures\container.jpg" />
     <Image Include="res\textures\container2.png" />
     <Image Include="res\textures\container2_specular.png" />
+    <Image Include="res\textures\marble.jpg" />
     <Image Include="res\textures\matrix.jpg" />
+    <Image Include="res\textures\metal.png" />
     <Image Include="res\textures\wall.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\model_loading\model_loading.frag" />
-    <None Include="src\model_loading\model_loading.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
