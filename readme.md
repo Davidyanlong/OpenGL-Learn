@@ -25,5 +25,7 @@ https://github.com/g-truc/glm
 
 https://github.com/ocornut/imgui
 
+https://github.com/assimp/assimp
+
 
 
