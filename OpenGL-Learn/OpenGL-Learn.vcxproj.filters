@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\multiple_lights\multiple_lights.cpp">
+    <ClCompile Include="src\model_loading\model_loading.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,6 +33,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="includes\learnopengl\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\learnopengl\model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\learnopengl\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\learnopengl\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -57,9 +66,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\multiple_lights\multiple_lights.frag" />
-    <None Include="src\multiple_lights\multiple_lights.vert" />
-    <None Include="src\multiple_lights\light_cube.frag" />
-    <None Include="src\multiple_lights\light_cube.vert" />
+    <None Include="src\model_loading\model_loading.frag" />
+    <None Include="src\model_loading\model_loading.vert" />
   </ItemGroup>
 </Project>
