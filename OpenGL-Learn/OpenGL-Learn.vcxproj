@@ -141,8 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\blending_sort\blending_sorted.cpp" />
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\stencil_testing\stencil_testing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -164,9 +164,8 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\stencil_testing\stencil_single_color.frag" />
-    <None Include="src\stencil_testing\stencil_testing.frag" />
-    <None Include="src\stencil_testing\stencil_testing.vert" />
+    <None Include="src\blending_sort\blending.frag" />
+    <None Include="src\blending_sort\blending.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

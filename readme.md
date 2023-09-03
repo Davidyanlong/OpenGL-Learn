@@ -3,7 +3,7 @@
 https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=17
 
 #### �ı��γ̽��ȣ�
-https://learnopengl-cn.github.io/02%20Lighting/05%20Light%20casters/
+https://learnopengl-cn.github.io/04%20Advanced%20OpenGL/03%20Blending/
 
 https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/2.lighting/3.1.materials
 
