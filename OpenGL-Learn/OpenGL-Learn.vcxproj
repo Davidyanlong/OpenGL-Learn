@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\framebuffers\framebuffers.cpp" />
+    <ClCompile Include="src\cubemaps_environment_mapping\cubemaps_environment_mapping.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
@@ -164,10 +164,10 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\framebuffers\framebuffers.frag" />
-    <None Include="src\framebuffers\framebuffers.vert" />
-    <None Include="src\framebuffers\framebuffers_screen.frag" />
-    <None Include="src\framebuffers\framebuffers_screen.vert" />
+    <None Include="src\cubemaps_environment_mapping\cubemaps.frag" />
+    <None Include="src\cubemaps_environment_mapping\cubemaps.vert" />
+    <None Include="src\cubemaps_environment_mapping\skybox.frag" />
+    <None Include="src\cubemaps_environment_mapping\skybox.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
