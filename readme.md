@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GG
 #### �ı��γ̽��ȣ�
 https://learnopengl-cn.github.io/04%20Advanced%20OpenGL/09%20Geometry%20Shader/
 
-https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/2.lighting/3.1.materials
+https://learnopengl-cn.github.io/04%20Advanced%20OpenGL/11%20Anti%20Aliasing/
 
 https://learnopengl-cn.github.io/   
 https://learnopengl.com/   
