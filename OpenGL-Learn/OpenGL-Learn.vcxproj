@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\anti_aliasing_offscreen\anti_alisaing_offscreen.cpp" />
+    <ClCompile Include="src\advanced_lighting\advanced_lighting.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
@@ -164,10 +164,8 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\anti_aliasing_offscreen\aa_post.frag" />
-    <None Include="src\anti_aliasing_offscreen\aa_post.vert" />
-    <None Include="src\anti_aliasing_offscreen\anti_aliasing.frag" />
-    <None Include="src\anti_aliasing_offscreen\anti_aliasing.vert" />
+    <None Include="src\advanced_lighting\advanced_lighting.frag" />
+    <None Include="src\advanced_lighting\advanced_lighting.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
