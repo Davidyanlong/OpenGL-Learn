@@ -3,7 +3,7 @@
 https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=17
 
 #### �ı��γ̽��ȣ�
-https://learnopengl-cn.github.io/04%20Advanced%20OpenGL/09%20Geometry%20Shader/
+https://learnopengl-cn.github.io/05%20Advanced%20Lighting/01%20Advanced%20Lighting/
 
 https://learnopengl-cn.github.io/04%20Advanced%20OpenGL/11%20Anti%20Aliasing/
 

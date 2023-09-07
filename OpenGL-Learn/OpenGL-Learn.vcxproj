@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\asteroids_instanced\asteroids_instanced.cpp" />
+    <ClCompile Include="src\anti_aliasing_offscreen\anti_alisaing_offscreen.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
@@ -164,10 +164,10 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\asteroids_instanced\asteroids.frag" />
-    <None Include="src\asteroids_instanced\asteroids.vert" />
-    <None Include="src\asteroids_instanced\planet.vert" />
-    <None Include="src\asteroids_instanced\planet.frag" />
+    <None Include="src\anti_aliasing_offscreen\aa_post.frag" />
+    <None Include="src\anti_aliasing_offscreen\aa_post.vert" />
+    <None Include="src\anti_aliasing_offscreen\anti_aliasing.frag" />
+    <None Include="src\anti_aliasing_offscreen\anti_aliasing.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
