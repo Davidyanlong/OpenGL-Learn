@@ -141,8 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\gamma_correction\gamma_correction.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\normal_mapping\normal_mapping.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -164,8 +164,8 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\gamma_correction\gamma_correction.vert" />
-    <None Include="src\gamma_correction\gamma_correction.frag" />
+    <None Include="src\normal_mapping\normal_mapping.frag" />
+    <None Include="src\normal_mapping\normal_mapping.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
