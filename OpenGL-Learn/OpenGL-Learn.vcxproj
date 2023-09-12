@@ -141,8 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\bloom\bloom.cpp" />
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\hdr\hdr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -164,10 +164,13 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\hdr\hdr.frag" />
-    <None Include="src\hdr\hdr.vert" />
-    <None Include="src\hdr\lighting.frag" />
-    <None Include="src\hdr\lighting.vert" />
+    <None Include="src\bloom\bloom.frag" />
+    <None Include="src\bloom\bloom.vert" />
+    <None Include="src\bloom\bloom_final.frag" />
+    <None Include="src\bloom\bloom_final.vert" />
+    <None Include="src\bloom\blur.frag" />
+    <None Include="src\bloom\blur.vert" />
+    <None Include="src\bloom\light_box.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
