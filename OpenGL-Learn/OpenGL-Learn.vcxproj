@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\bloom\bloom.cpp" />
+    <ClCompile Include="src\deferred_shading_volumes\deferred_shading_volumes.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
@@ -164,13 +164,14 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\bloom\bloom.frag" />
-    <None Include="src\bloom\bloom.vert" />
-    <None Include="src\bloom\bloom_final.frag" />
-    <None Include="src\bloom\bloom_final.vert" />
-    <None Include="src\bloom\blur.frag" />
-    <None Include="src\bloom\blur.vert" />
-    <None Include="src\bloom\light_box.frag" />
+    <None Include="src\deferred_shading_volumes\deferred_light_box.frag" />
+    <None Include="src\deferred_shading_volumes\deferred_light_box.vert" />
+    <None Include="src\deferred_shading_volumes\deferred_shading.frag" />
+    <None Include="src\deferred_shading_volumes\deferred_shading.vert" />
+    <None Include="src\deferred_shading_volumes\fbo_debug.frag" />
+    <None Include="src\deferred_shading_volumes\fbo_debug.vert" />
+    <None Include="src\deferred_shading_volumes\g_buffer.frag" />
+    <None Include="src\deferred_shading_volumes\g_buffer.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
