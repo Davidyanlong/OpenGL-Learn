@@ -141,8 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\deferred_shading_volumes\deferred_shading_volumes.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\ssao\ssao.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -164,14 +164,12 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\deferred_shading_volumes\deferred_light_box.frag" />
-    <None Include="src\deferred_shading_volumes\deferred_light_box.vert" />
-    <None Include="src\deferred_shading_volumes\deferred_shading.frag" />
-    <None Include="src\deferred_shading_volumes\deferred_shading.vert" />
-    <None Include="src\deferred_shading_volumes\fbo_debug.frag" />
-    <None Include="src\deferred_shading_volumes\fbo_debug.vert" />
-    <None Include="src\deferred_shading_volumes\g_buffer.frag" />
-    <None Include="src\deferred_shading_volumes\g_buffer.vert" />
+    <None Include="src\ssao\ssao.frag" />
+    <None Include="src\ssao\ssao.vert" />
+    <None Include="src\ssao\ssao_blur.frag" />
+    <None Include="src\ssao\ssao_geometry.frag" />
+    <None Include="src\ssao\ssao_geometry.vert" />
+    <None Include="src\ssao\ssao_lighting.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
