@@ -163,14 +163,6 @@
     <Image Include="res\textures\metal.png" />
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="src\ssao\ssao.frag" />
-    <None Include="src\ssao\ssao.vert" />
-    <None Include="src\ssao\ssao_blur.frag" />
-    <None Include="src\ssao\ssao_geometry.frag" />
-    <None Include="src\ssao\ssao_geometry.vert" />
-    <None Include="src\ssao\ssao_lighting.frag" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
