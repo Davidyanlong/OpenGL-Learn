@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\pbr_lighting\lighting.cpp">
+    <ClCompile Include="src\pbr_lighting_textured\lighting_textured.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -72,7 +72,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\pbr_lighting\pbr.frag" />
-    <None Include="src\pbr_lighting\pbr.vert" />
+    <None Include="src\pbr_lighting_textured\pbr.frag" />
+    <None Include="src\pbr_lighting_textured\pbr.vert" />
   </ItemGroup>
 </Project>
