@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\ssao\ssao.cpp" />
+    <ClCompile Include="src\pbr_lighting\lighting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -162,6 +162,10 @@
     <Image Include="res\textures\matrix.jpg" />
     <Image Include="res\textures\metal.png" />
     <Image Include="res\textures\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\pbr_lighting\pbr.frag" />
+    <None Include="src\pbr_lighting\pbr.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
