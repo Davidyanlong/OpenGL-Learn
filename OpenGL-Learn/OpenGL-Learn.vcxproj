@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\pbr_lighting_textured\lighting_textured.cpp" />
+    <ClCompile Include="src\ibl_irradiance_conversion\ibl_irradiance_conversion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -164,8 +164,12 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\pbr_lighting_textured\pbr.frag" />
-    <None Include="src\pbr_lighting_textured\pbr.vert" />
+    <None Include="src\ibl_irradiance_conversion\background.frag" />
+    <None Include="src\ibl_irradiance_conversion\background.vert" />
+    <None Include="src\ibl_irradiance_conversion\cubemap.vert" />
+    <None Include="src\ibl_irradiance_conversion\equirectangular_to_cubemap.frag" />
+    <None Include="src\ibl_irradiance_conversion\pbr.frag" />
+    <None Include="src\ibl_irradiance_conversion\pbr.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
