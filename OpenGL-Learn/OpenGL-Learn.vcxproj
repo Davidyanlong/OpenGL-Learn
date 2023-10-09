@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\ibl_irradiance_conversion\ibl_irradiance_conversion.cpp" />
+    <ClCompile Include="src\ibl_specular_textured\ibl_specular_textured.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\camera.h" />
@@ -164,12 +164,16 @@
     <Image Include="res\textures\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\ibl_irradiance_conversion\background.frag" />
-    <None Include="src\ibl_irradiance_conversion\background.vert" />
-    <None Include="src\ibl_irradiance_conversion\cubemap.vert" />
-    <None Include="src\ibl_irradiance_conversion\equirectangular_to_cubemap.frag" />
-    <None Include="src\ibl_irradiance_conversion\pbr.frag" />
-    <None Include="src\ibl_irradiance_conversion\pbr.vert" />
+    <None Include="src\ibl_specular_textured\background.frag" />
+    <None Include="src\ibl_specular_textured\background.vert" />
+    <None Include="src\ibl_specular_textured\brdf.frag" />
+    <None Include="src\ibl_specular_textured\brdf.vert" />
+    <None Include="src\ibl_specular_textured\cubemap.vert" />
+    <None Include="src\ibl_specular_textured\equirectangular_to_cubemap.frag" />
+    <None Include="src\ibl_specular_textured\irradiance_convolution.frag" />
+    <None Include="src\ibl_specular_textured\pbr.frag" />
+    <None Include="src\ibl_specular_textured\pbr.vert" />
+    <None Include="src\ibl_specular_textured\prefilter.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
