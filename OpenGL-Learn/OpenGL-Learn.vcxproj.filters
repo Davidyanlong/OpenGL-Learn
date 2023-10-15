@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\pbr_lighting_textured\lighting_textured.cpp">
+    <ClCompile Include="src\game\program.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,6 +42,33 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="includes\learnopengl\shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ft2build.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\resource_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\game_level.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\power_up.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\game_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\sprite_renderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -70,9 +97,5 @@
     <Image Include="res\textures\metal.png">
       <Filter>资源文件</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\pbr_lighting_textured\pbr.frag" />
-    <None Include="src\pbr_lighting_textured\pbr.vert" />
   </ItemGroup>
 </Project>
