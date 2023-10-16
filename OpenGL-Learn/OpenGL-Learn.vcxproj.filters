@@ -21,6 +21,9 @@
     <ClCompile Include="src\game\program.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\shader_s.h">
@@ -69,6 +72,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\game\shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\ball_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\particle_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\post_processor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\text_renderer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
