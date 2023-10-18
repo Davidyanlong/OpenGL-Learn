@@ -143,6 +143,7 @@
   <ItemGroup>
     <ClCompile Include="src\game\game.cpp" />
     <ClCompile Include="src\game\program.cpp" />
+    <ClCompile Include="src\game\resource_manager.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
@@ -176,12 +177,6 @@
     <Image Include="res\textures\matrix.jpg" />
     <Image Include="res\textures\metal.png" />
     <Image Include="res\textures\wall.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\game\resources\levels\four.lvl" />
-    <None Include="src\game\resources\levels\one.lvl" />
-    <None Include="src\game\resources\levels\three.lvl" />
-    <None Include="src\game\resources\levels\two.lvl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
