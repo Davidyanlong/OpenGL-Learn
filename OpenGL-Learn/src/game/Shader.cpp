@@ -57,7 +57,7 @@ void Shader::SetFloat(const char* name, float value, bool useShader)
 }
 
 
-void Shader::SetInteger(const char* name, float value, bool useShader = false)
+void Shader::SetInteger(const char* name, float value, bool useShader)
 {
 	if (useShader) {
 		this->Use();
@@ -66,7 +66,7 @@ void Shader::SetInteger(const char* name, float value, bool useShader = false)
 }
 
 
-void Shader::SetVector2f(const char* name, float x, float y, bool useShader = false)
+void Shader::SetVector2f(const char* name, float x, float y, bool useShader)
 {
 	if (useShader) {
 		this->Use();
@@ -75,13 +75,13 @@ void Shader::SetVector2f(const char* name, float x, float y, bool useShader = fa
 }
 
 
-void Shader::SetVector2f(const char* name, const glm::vec2& value, bool useShader = false)
+void Shader::SetVector2f(const char* name, const glm::vec2& value, bool useShader)
 {
 
 }
 
 
-void Shader::SetVector3f(const char* name, float x, float y, float z, bool useShader = false)
+void Shader::SetVector3f(const char* name, float x, float y, float z, bool useShader)
 {
 	if (useShader) {
 		this->Use();
@@ -90,13 +90,13 @@ void Shader::SetVector3f(const char* name, float x, float y, float z, bool useSh
 }
 
 
-void Shader::SetVector3f(const char* name, const glm::vec3& value, bool useShader = false)
+void Shader::SetVector3f(const char* name, const glm::vec3& value, bool useShader)
 {
 
 }
 
 
-void Shader::SetVector4f(const char* name, float x, float y, float z, float w, bool useShader = false)
+void Shader::SetVector4f(const char* name, float x, float y, float z, float w, bool useShader)
 {
 	if (useShader) {
 		this->Use();
@@ -106,7 +106,7 @@ void Shader::SetVector4f(const char* name, float x, float y, float z, float w, b
 }
 
 
-void Shader::SetVector4f(const char* name, const glm::vec4& value, bool useShader = false)
+void Shader::SetVector4f(const char* name, const glm::vec4& value, bool useShader)
 {
 	if (useShader) {
 		this->Use();
@@ -115,7 +115,7 @@ void Shader::SetVector4f(const char* name, const glm::vec4& value, bool useShade
 }
 
 
-void Shader::SetMatrix4(const char* name, const glm::mat4& matrix, bool useShader = false)
+void Shader::SetMatrix4(const char* name, const glm::mat4& matrix, bool useShader)
 {
 	if (useShader) {
 		this->Use();

@@ -144,6 +144,9 @@
     <ClCompile Include="src\game\game.cpp" />
     <ClCompile Include="src\game\program.cpp" />
     <ClCompile Include="src\game\resource_manager.cpp" />
+    <ClCompile Include="src\game\Shader.cpp" />
+    <ClCompile Include="src\game\sprite_renderer.cpp" />
+    <ClCompile Include="src\game\texture.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>

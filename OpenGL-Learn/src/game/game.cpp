@@ -8,8 +8,9 @@ using namespace irrklang;
 
 #include "game.h"
 #include "resource_manager.h"
-#if 0
+
 #include "sprite_renderer.h"
+#if 0
 #include "game_object.h"
 #include "ball_object.h"
 #include "particle_generator.h"
@@ -19,8 +20,9 @@ using namespace irrklang;
 
 
 // Game-related state data
-#if 0
+
 SpriteRenderer* Renderer;
+#if 0
 GameObject* Player;
 BallObject* Ball;
 ParticleGenerator* Particles;
@@ -60,9 +62,9 @@ void Game::Init()
 	//configure shaders
 	glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->Width), static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
 	ResourceManager::GetShader("sprite").Use().SetInteger("sprite", 0);
-	ResourceManager::GetShader("sprite").Use().SetMatrix("projection", projection);
+	ResourceManager::GetShader("sprite").Use().SetMatrix4("projection", projection);
 	ResourceManager::GetShader("particle").Use().SetInteger("sprite", 0);
-	ResourceManager::GetShader("particle").Use().SetMatrix("projection", projection);
+	ResourceManager::GetShader("particle").Use().SetMatrix4("projection", projection);
 	// load textures
 
 	ResourceManager::LoadTexture("src/game/resources/textures/background.jpg", false, "background");
@@ -79,8 +81,8 @@ void Game::Init()
 	ResourceManager::LoadTexture("src/game/resources/textures/powerup_passthrough.png", true, "powerup_passthrough");
 
 	// set render-specific controls
-#if 0
 	Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
+#if 0
 	Particle = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
 	Effects = new PostProcessor(ResourceManager::GetShader("postprocessing"), this->Width, this->Height);
 	Text = new TextRenderer(this->Width, this->Height);
@@ -143,11 +145,12 @@ void Game::UpdatePowerUps(float dt)
 {
 
 }
-
+#if 0
 void Game::SpawnPowerUps(GameObject& block)
 {
 
 }
+#endif
 
 
 void Game::DoCollisions()

@@ -23,7 +23,7 @@ public:
 	// loads (and generates) as shader program from file loading vertex, fragement (and geometry) shaser's spirce code. if gShaderFile is not nullptr, it  also loads a geometry shader
 	static Shader LoadShader(const char* vShaderFile, const char* fShaderFile, const char* gShaderFile, std::string name);
 	// retrieves a stored sader
-	static Shader GetShader(std::string name);
+	static Shader    GetShader(std::string name);
 	// loads (and generates) a textue from file
 	static Texture2D LoadTexture(const char* file, bool alpha, std::string name);
 	// retrieves a stored texture
