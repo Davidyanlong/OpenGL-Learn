@@ -10,9 +10,10 @@ using namespace irrklang;
 #include "resource_manager.h"
 
 #include "sprite_renderer.h"
-#if 0
 #include "game_object.h"
 #include "ball_object.h"
+// TODO: 下一步实现粒子
+#if 0
 #include "particle_generator.h"
 #include "post_processor.h"
 #include "text_renderer.h"
@@ -22,9 +23,10 @@ using namespace irrklang;
 // Game-related state data
 
 SpriteRenderer* Renderer;
-#if 0
 GameObject* Player;
 BallObject* Ball;
+
+#if 0
 ParticleGenerator* Particles;
 PostProcessor* Effects;
 ISoundEngine* SoundEngine = createIrrKlangDevice();
@@ -41,10 +43,11 @@ Game::Game(unsigned int width, unsigned int height)
 
 Game::~Game()
 {
-#if 0
+
 	delete Renderer;
 	delete Player;
 	delete Ball;
+#if 0
 	delete Particles;
 	delete Effects;
 	delete Text;
@@ -81,7 +84,6 @@ void Game::Init()
 	ResourceManager::LoadTexture("src/game/resources/textures/powerup_passthrough.png", true, "powerup_passthrough");
 
 	// set render-specific controls
-	Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
 #if 0
 	Particle = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
 	Effects = new PostProcessor(ResourceManager::GetShader("postprocessing"), this->Width, this->Height);
@@ -101,12 +103,12 @@ void Game::Init()
 	this->Level = 0;
 #endif
 	// configure game objects
-#if 0
+
 	glm::vec2 playerPos = glm::vec2(this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, this->Height - PLAYER_SIZE.y);
 	Player = new GameObject(playerPos, PLAYER_SIZE, ResourceManager::GetTexture("paddle"));
 	glm::vec2 ballPos = playerPos + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -BALL_RADIUS * 2.0f);
 	Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY, ResourceManager::GetTexture("face"));
-#endif
+
 	// audio
 #if 0
 	SoundEngine->play2D("src/game/resources/audio/breakout.mp3", true);
