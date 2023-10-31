@@ -42,6 +42,9 @@
     <ClCompile Include="src\game\ball_object.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\particle_generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\learnopengl\shader_s.h">

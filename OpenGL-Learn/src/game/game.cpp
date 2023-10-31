@@ -12,9 +12,9 @@ using namespace irrklang;
 #include "sprite_renderer.h"
 #include "game_object.h"
 #include "ball_object.h"
-// TODO: 下一步实现粒子
-#if 0
 #include "particle_generator.h"
+
+#if 0
 #include "post_processor.h"
 #include "text_renderer.h"
 #endif // 0
@@ -25,9 +25,9 @@ using namespace irrklang;
 SpriteRenderer* Renderer;
 GameObject* Player;
 BallObject* Ball;
+ParticleGenerator* Particles;
 
 #if 0
-ParticleGenerator* Particles;
 PostProcessor* Effects;
 ISoundEngine* SoundEngine = createIrrKlangDevice();
 TextRenderer* Text;
@@ -84,8 +84,9 @@ void Game::Init()
 	ResourceManager::LoadTexture("src/game/resources/textures/powerup_passthrough.png", true, "powerup_passthrough");
 
 	// set render-specific controls
+
+	Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
 #if 0
-	Particle = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
 	Effects = new PostProcessor(ResourceManager::GetShader("postprocessing"), this->Width, this->Height);
 	Text = new TextRenderer(this->Width, this->Height);
 	Text->Load("src/game/resources/fonts/OCRAEXT.TTF", 24);
