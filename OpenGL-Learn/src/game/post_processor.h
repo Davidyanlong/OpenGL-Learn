@@ -17,6 +17,7 @@
 
 class PostProcessor
 {
+public:
 	// state
 	Shader PostProcessingShader;
 	Texture2D Texture;
@@ -24,7 +25,7 @@ class PostProcessor
 	// options
 	bool Confuse, Chaos, Shake;
 	// constructor
-	PostProcessor(Shader shader, unsigned int width, unsigned int height);
+	PostProcessor(const Shader shader, unsigned int width, unsigned int height);
 	// prepares the postprocesssor's framebuffer oprations before rendering the game
 	void BeginRender();
 	// should be called after rendering the game, so it stores all the rendered data into a textue object

@@ -6,9 +6,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include<glm/glm.hpp>
+#include "game_level.h"
 
 #if 0
-#include "game_level.h"
 #include "power_up.h"
 #endif
 
@@ -49,8 +49,9 @@ public:
     bool                    Keys[1024];
     bool                    KeysProcessed[1024];
     unsigned int            Width, Height;
-#if 0
     std::vector<GameLevel>  Levels;
+
+#if 0
     std::vector<PowerUp>    PowerUps;
 #endif
     unsigned int            Level;

@@ -13,9 +13,9 @@ using namespace irrklang;
 #include "game_object.h"
 #include "ball_object.h"
 #include "particle_generator.h"
+#include "post_processor.h"
 
 #if 0
-#include "post_processor.h"
 #include "text_renderer.h"
 #endif // 0
 
@@ -26,9 +26,9 @@ SpriteRenderer* Renderer;
 GameObject* Player;
 BallObject* Ball;
 ParticleGenerator* Particles;
+PostProcessor* Effects;
 
 #if 0
-PostProcessor* Effects;
 ISoundEngine* SoundEngine = createIrrKlangDevice();
 TextRenderer* Text;
 #endif // 0
@@ -47,9 +47,10 @@ Game::~Game()
 	delete Renderer;
 	delete Player;
 	delete Ball;
-#if 0
+
 	delete Particles;
 	delete Effects;
+#if 0
 	delete Text;
 	SoundEngine->drop();
 #endif // 0
@@ -86,14 +87,14 @@ void Game::Init()
 	// set render-specific controls
 
 	Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
-#if 0
 	Effects = new PostProcessor(ResourceManager::GetShader("postprocessing"), this->Width, this->Height);
+#if 0
 	Text = new TextRenderer(this->Width, this->Height);
 	Text->Load("src/game/resources/fonts/OCRAEXT.TTF", 24);
 #endif
 	// load levels
-#if 0
-	GemeLevel one; one.Load("src/game/resources/levels/one.lvl", this->Width, this->Height / 2);
+
+	GameLevel one; one.Load("src/game/resources/levels/one.lvl", this->Width, this->Height / 2);
 	GameLevel two; two.Load("src/game/resources/levels/two.lvl", this->Width, this->Height / 2);
 	GameLevel three; three.Load("src/game/resources/levels/three.lvl", this->Width, this->Height / 2);
 	GameLevel four; four.Load("src/game/resources/levels/four.lvl", this->Width, this->Height / 2);
@@ -102,7 +103,7 @@ void Game::Init()
 	this->Levels.push_back(three);
 	this->Levels.push_back(four);
 	this->Level = 0;
-#endif
+
 	// configure game objects
 
 	glm::vec2 playerPos = glm::vec2(this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, this->Height - PLAYER_SIZE.y);

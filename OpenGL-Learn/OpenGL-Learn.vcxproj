@@ -143,8 +143,10 @@
   <ItemGroup>
     <ClCompile Include="src\game\ball_object.cpp" />
     <ClCompile Include="src\game\game.cpp" />
+    <ClCompile Include="src\game\game_level.cpp" />
     <ClCompile Include="src\game\game_object.cpp" />
     <ClCompile Include="src\game\particle_generator.cpp" />
+    <ClCompile Include="src\game\post_processor.cpp" />
     <ClCompile Include="src\game\program.cpp" />
     <ClCompile Include="src\game\resource_manager.cpp" />
     <ClCompile Include="src\game\Shader.cpp" />
