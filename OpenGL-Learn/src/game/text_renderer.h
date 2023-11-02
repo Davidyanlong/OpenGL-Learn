@@ -22,6 +22,7 @@ struct Character {
 
 class TextRenderer
 {
+public:
 	// holds a list of pre-compiled Charaters
 	std::map<char, Character> Characters;
 	// shader used for text rendering

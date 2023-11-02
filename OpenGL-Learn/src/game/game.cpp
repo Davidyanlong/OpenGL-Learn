@@ -14,10 +14,7 @@ using namespace irrklang;
 #include "ball_object.h"
 #include "particle_generator.h"
 #include "post_processor.h"
-
-#if 0
 #include "text_renderer.h"
-#endif // 0
 
 
 // Game-related state data
@@ -28,10 +25,10 @@ BallObject* Ball;
 ParticleGenerator* Particles;
 PostProcessor* Effects;
 
-#if 0
+
 ISoundEngine* SoundEngine = createIrrKlangDevice();
 TextRenderer* Text;
-#endif // 0
+
 
 float ShakeTime = 0.0f;
 
@@ -47,13 +44,10 @@ Game::~Game()
 	delete Renderer;
 	delete Player;
 	delete Ball;
-
 	delete Particles;
 	delete Effects;
-#if 0
 	delete Text;
 	SoundEngine->drop();
-#endif // 0
 }
 
 void Game::Init()
@@ -88,10 +82,10 @@ void Game::Init()
 
 	Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
 	Effects = new PostProcessor(ResourceManager::GetShader("postprocessing"), this->Width, this->Height);
-#if 0
+
 	Text = new TextRenderer(this->Width, this->Height);
 	Text->Load("src/game/resources/fonts/OCRAEXT.TTF", 24);
-#endif
+
 	// load levels
 
 	GameLevel one; one.Load("src/game/resources/levels/one.lvl", this->Width, this->Height / 2);
@@ -111,10 +105,8 @@ void Game::Init()
 	glm::vec2 ballPos = playerPos + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -BALL_RADIUS * 2.0f);
 	Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY, ResourceManager::GetTexture("face"));
 
-	// audio
-#if 0
+
 	SoundEngine->play2D("src/game/resources/audio/breakout.mp3", true);
-#endif
 
 
 }

@@ -110,7 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;STB_IMAGE_IMPLEMENTATION;GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL-Learn\includes;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\Glad\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\assimp;$(SolutionDir)Dependencies;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL-Learn\includes;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\Glad\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\irrKlang;$(SolutionDir)Dependencies\assimp;$(SolutionDir)Dependencies;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;STB_IMAGE_IMPLEMENTATION;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL-Learn\includes;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\Glad\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\assimp;$(SolutionDir)Dependencies;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL-Learn\includes;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\Glad\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\irrKlang;$(SolutionDir)Dependencies\assimp;$(SolutionDir)Dependencies;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -152,6 +152,7 @@
     <ClCompile Include="src\game\Shader.cpp" />
     <ClCompile Include="src\game\sprite_renderer.cpp" />
     <ClCompile Include="src\game\texture.cpp" />
+    <ClCompile Include="src\game\text_renderer.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
