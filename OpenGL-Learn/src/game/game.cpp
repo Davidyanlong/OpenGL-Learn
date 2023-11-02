@@ -135,18 +135,17 @@ void Game::ResetPlayer()
 }
 
 // powerups
-// bool IsOtherPowerUpActive(std::vector<PowerUp>& powerup, std::string type);
+bool IsOtherPowerUpActive(std::vector<PowerUp>& powerup, std::string type);
 
 void Game::UpdatePowerUps(float dt)
 {
 
 }
-#if 0
+
 void Game::SpawnPowerUps(GameObject& block)
 {
 
 }
-#endif
 
 
 void Game::DoCollisions()

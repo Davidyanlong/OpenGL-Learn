@@ -7,10 +7,8 @@
 #include <GLFW/glfw3.h>
 #include<glm/glm.hpp>
 #include "game_level.h"
-
-#if 0
 #include "power_up.h"
-#endif
+
 
 // Represents the current state of the game
 enum GameState {
@@ -50,10 +48,7 @@ public:
     bool                    KeysProcessed[1024];
     unsigned int            Width, Height;
     std::vector<GameLevel>  Levels;
-
-#if 0
     std::vector<PowerUp>    PowerUps;
-#endif
     unsigned int            Level;
     unsigned int            Lives;
     // constructor/destructor
@@ -70,9 +65,7 @@ public:
     void ResetLevel();
     void ResetPlayer();
     // powerups
-#if 0
     void SpawnPowerUps(GameObject& block);
-#endif
     void UpdatePowerUps(float dt);
 };
 
