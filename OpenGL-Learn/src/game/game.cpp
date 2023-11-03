@@ -213,14 +213,45 @@ void Game::Render()
 {
 	if (this->State == GAME_ACTIVE || this->State == GAME_MENU || this->State == GAME_WIN)
 	{
+	
 		//begin rendering to postprocessing framebuffer
 		Effects->BeginRender();
+
 		// draw background
-		
 		Renderer->DrawSprite(ResourceManager::GetTexture("background"), glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
+		
+		// draw level
+		this->Levels[this->Level].Draw(*Renderer);
+
+		// draw player
+		Player->Draw(*Renderer);
+		// draw PowerUps
+		for (PowerUp& powerUp : this->PowerUps)
+			if (!powerUp.Destroyed)
+				powerUp.Draw(*Renderer);
+		// draw particles	
+		Particles->Draw();
+		// draw ball
+		Ball->Draw(*Renderer);
 
 		// end rendering to postprocessing framebuffer
 		Effects->EndRender();
+		Effects->Render(glfwGetTime());
+
+		// render text (don't include in postprocessing)
+		std::stringstream ss; ss << this->Lives;
+		Text->RenderText("Lives:" + ss.str(), 5.0f, 5.0f, 1.0f);
+	}
+
+	if (this->State == GAME_MENU)
+	{
+		Text->RenderText("Press ENTER to start", 250.0f, this->Height / 2.0f, 1.0f);
+		Text->RenderText("Press W or S to select level", 245.0f, this->Height / 2.0f + 20.0f, 0.75f);
+	}
+	if (this->State == GAME_WIN)
+	{
+		Text->RenderText("You WON!!!", 320.0f, this->Height / 2.0f - 20.0f, 1.0f, glm::vec3(0.0f, 1.0f, 0.0f));
+		Text->RenderText("Press ENTER to retry or ESC to quit", 130.0f, this->Height / 2.0f, 1.0f, glm::vec3(1.0f, 1.0f, 0.0f));
 	}
 }
 

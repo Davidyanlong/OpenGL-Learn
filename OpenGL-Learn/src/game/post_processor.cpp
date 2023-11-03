@@ -68,9 +68,9 @@ void PostProcessor::BeginRender()
 void PostProcessor::EndRender()
 {
 	// now resolve multisampled color-buffer into intermediate FBO to store to texture
-	glBindFramebuffer(GL_READ_FRAMEBUFFER, this->MSFBO); // ¶Á»º´æ
-	glBindFramebuffer(GL_DRAW_FRAMEBUFFER, this->FBO);   // Ð´»º´æ
-	glBlitFramebuffer(0, 0, this->Width, this->Height, 0, 0, this->Width, this->Height, GL_COLOR_BUFFER_BIT, GL_NEAREST); //  Ö´ÐÐ¿½±´
+	glBindFramebuffer(GL_READ_FRAMEBUFFER, this->MSFBO);
+	glBindFramebuffer(GL_DRAW_FRAMEBUFFER, this->FBO);
+	glBlitFramebuffer(0, 0, this->Width, this->Height, 0, 0, this->Width, this->Height, GL_COLOR_BUFFER_BIT, GL_NEAREST);
 	glBindFramebuffer(GL_FRAMEBUFFER, 0); // binds both READ and WRITE framebuffer to default framebuffer
 }
 
