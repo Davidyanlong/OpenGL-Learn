@@ -84,6 +84,7 @@ void Shader::SetVector4f(const char* name, float x, float y, float z, float w, b
 {
     if (useShader)
         this->Use();
+    // 平凡的使用glGetUniformLocation对性能是有影响的
     glUniform4f(glGetUniformLocation(this->ID, name), x, y, z, w);
 }
 void Shader::SetVector4f(const char* name, const glm::vec4& value, bool useShader)

@@ -66,7 +66,7 @@ void GameLevel::init(std::vector<std::vector<unsigned int>> tileData, unsigned i
             }
             else if (tileData[y][x] > 1)	// non-solid; now determine its color based on level data
             {
-                glm::vec3 color = glm::vec3(1.0f); // original: white
+                glm::vec3 color = glm::vec3(1.0f); // original: white 默认为白色
                 if (tileData[y][x] == 2)
                     color = glm::vec3(0.2f, 0.6f, 1.0f);
                 else if (tileData[y][x] == 3)
@@ -78,6 +78,7 @@ void GameLevel::init(std::vector<std::vector<unsigned int>> tileData, unsigned i
 
                 glm::vec2 pos(unit_width * x, unit_height * y);
                 glm::vec2 size(unit_width, unit_height);
+                // 根据获取的游戏关卡信息， 创建砖块
                 this->Bricks.push_back(GameObject(pos, size, ResourceManager::GetTexture("block"), color));
             }
         }

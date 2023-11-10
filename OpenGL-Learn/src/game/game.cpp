@@ -257,11 +257,29 @@ void Game::Render()
 
 void Game::ResetLevel()
 {
+	if (this->Level == 0)
+		this->Levels[0].Load("src/game/resources/levels/one.lvl", this->Width, this->Height / 2);
+	else if(this->Level == 1)
+		this->Levels[0].Load("src/game/resources/levels/two.lvl", this->Width, this->Height / 2);
+	else if (this->Level == 2)
+		this->Levels[2].Load("src/game/resources/levels/three.lvl", this->Width, this->Height / 2);
+	else if (this->Level == 3)
+		this->Levels[3].Load("src/game/resources/levels/four.lvl", this->Width, this->Height / 2);
 
+	this->Lives = 3;
 }
 
 void Game::ResetPlayer()
 {
+	// rest player/ ball stats
+	Player->Size = PLAYER_SIZE;
+	Player->Position = glm::vec2(this->Width / 2.0 - PLAYER_SIZE.x / 2.0f, this->Height - PLAYER_SIZE.y);
+	Ball->Reset(Player->Position + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -(BALL_RADIUS * 2.0f)), INITIAL_BALL_VELOCITY);
+	// also disable all active powerups
+	Effects->Chaos = Effects->Confuse = false;
+	Ball->PassThrough = Ball->Sticky = false;
+	Player->Color = glm::vec3(1.0);
+	Ball->Color = glm::vec3(1.0f);
 }
 
 // powerups
@@ -269,12 +287,76 @@ bool IsOtherPowerUpActive(std::vector<PowerUp>& powerup, std::string type);
 
 void Game::UpdatePowerUps(float dt)
 {
+	for (PowerUp& powerUp : this->PowerUps)
+	{
+		powerUp.Position += powerUp.Velocity * dt;
+		if (powerUp.Activated)
+		{
+			powerUp.Duration -= dt;
 
+			if (powerUp.Duration <= 0.0f)
+			{
+				// remove powerup from list (will later be removed)
+				powerUp.Activated = false;
+				// deactivate effects
+				if (powerUp.Type == "sticky")
+				{
+					if (!IsOtherPowerUpActive(this->PowerUps, "sticky"))
+					{	// only reset if no other PowerUp of type sticky is active
+						Ball->Sticky = false;
+						Player->Color = glm::vec3(1.0f);
+					}
+				}
+				else if (powerUp.Type == "pass-through")
+				{
+					if (!IsOtherPowerUpActive(this->PowerUps, "pass-through"))
+					{	// only reset if no other PowerUp of type pass-through is active
+						Ball->PassThrough = false;
+						Ball->Color = glm::vec3(1.0f);
+					}
+				}
+				else if (powerUp.Type == "confuse")
+				{
+					if (!IsOtherPowerUpActive(this->PowerUps, "confuse"))
+					{	// only reset if no other PowerUp of type confuse is active
+						Effects->Confuse = false;
+					}
+				}
+				else if (powerUp.Type == "chaos")
+				{
+					if (!IsOtherPowerUpActive(this->PowerUps, "chaos"))
+					{	// only reset if no other PowerUp of type chaos is active
+						Effects->Chaos = false;
+					}
+				}
+			}
+		}
+	}
+	// Remove all PowerUps from vector that are destroyed AND !activated (thus either off the map or finished)
+	// Note we use a lambda expression to remove each PowerUp which is destroyed and not activated
+	this->PowerUps.erase(std::remove_if(this->PowerUps.begin(), this->PowerUps.end(),
+		[](const PowerUp& powerUp) { return powerUp.Destroyed && !powerUp.Activated; }
+	), this->PowerUps.end());
 }
-
+bool ShouldSpawn(unsigned int chance)
+{
+	unsigned int random = rand() % chance;
+	return random == 0;
+}
 void Game::SpawnPowerUps(GameObject& block)
 {
-
+	if (ShouldSpawn(75)) // 1 in 75 chance
+		this->PowerUps.push_back(PowerUp("speed", glm::vec3(0.5f, 0.5f, 1.0f), 0.0f, block.Position, ResourceManager::GetTexture("powerup_speed")));
+	if (ShouldSpawn(75))
+		this->PowerUps.push_back(PowerUp("sticky", glm::vec3(1.0f, 0.5f, 1.0f), 20.0f, block.Position, ResourceManager::GetTexture("powerup_sticky")));
+	if (ShouldSpawn(75))
+		this->PowerUps.push_back(PowerUp("pass-through", glm::vec3(0.5f, 1.0f, 0.5f), 10.0f, block.Position, ResourceManager::GetTexture("powerup_passthrough")));
+	if (ShouldSpawn(75))
+		this->PowerUps.push_back(PowerUp("pad-size-increase", glm::vec3(1.0f, 0.6f, 0.4), 0.0f, block.Position, ResourceManager::GetTexture("powerup_increase")));
+	if (ShouldSpawn(15)) // Negative powerups should spawn more often
+		this->PowerUps.push_back(PowerUp("confuse", glm::vec3(1.0f, 0.3f, 0.3f), 15.0f, block.Position, ResourceManager::GetTexture("powerup_confuse")));
+	if (ShouldSpawn(15))
+		this->PowerUps.push_back(PowerUp("chaos", glm::vec3(0.9f, 0.25f, 0.25f), 15.0f, block.Position, ResourceManager::GetTexture("powerup_chaos")));
 }
 
 void ActivatePowerUp(PowerUp& powerUp)
@@ -468,4 +550,17 @@ Direction VectorDirection(glm::vec2 target)
 		}
 	}
 	return (Direction)best_match;
+}
+
+bool IsOtherPowerUpActive(std::vector<PowerUp>& powerUps, std::string type)
+{
+	// Check if another PowerUp of the same type is still active
+	// in which case we don't disable its effect (yet)
+	for (const PowerUp& powerUp : powerUps)
+	{
+		if (powerUp.Activated)
+			if (powerUp.Type == type)
+				return true;
+	}
+	return false;
 }
