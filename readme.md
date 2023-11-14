@@ -3,8 +3,8 @@
 https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=17
 
 #### �ı��γ̽��ȣ�
-https://learnopengl-cn.github.io/05%20Advanced%20Lighting/08%20Deferred%20Shading/
-https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/5.advanced_lighting/3.2.1.point_shadows
+https://learnopengl-cn.github.io/08%20Guest%20Articles/2020/01%20Skeletal%20Animation/
+https://github.com/JoeyDeVries/LearnOpenGL/tree/master/src/8.guest/2020
 
 
 https://learnopengl-cn.github.io/   
