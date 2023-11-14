@@ -8,16 +8,21 @@ ParticleGenerator::ParticleGenerator(const Shader shader, const Texture2D textur
 
 void ParticleGenerator::Update(float dt, GameObject& object, unsigned int newParticles, glm::vec2 offset)
 {
-	// add new particles
+	// add new particles 
 	for (unsigned int i = 0; i < newParticles; ++i)
 	{
+		int unusedParticle = this->firstUnusedParticle();
+		this->respawnParticle(this->particles[unusedParticle], object, offset);
+	}
+	// update all particles
+	for (unsigned int i = 0; i < this->amount; ++i)
+	{
 		Particle& p = this->particles[i];
-		p.Life -= dt; // reduce life;
+		p.Life -= dt; // reduce life
 		if (p.Life > 0.0f)
-		{
-			// particel is alive, thus update
+		{	// particle is alive, thus update
 			p.Position -= p.Velocity * dt;
-			p.Color.a = -dt * 2.5f;
+			p.Color.a -= dt * 2.5f;
 		}
 	}
 }
