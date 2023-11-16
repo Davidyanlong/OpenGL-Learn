@@ -141,41 +141,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\game\ball_object.cpp" />
-    <ClCompile Include="src\game\game.cpp" />
-    <ClCompile Include="src\game\game_level.cpp" />
-    <ClCompile Include="src\game\game_object.cpp" />
-    <ClCompile Include="src\game\particle_generator.cpp" />
-    <ClCompile Include="src\game\post_processor.cpp" />
-    <ClCompile Include="src\game\program.cpp" />
-    <ClCompile Include="src\game\resource_manager.cpp" />
-    <ClCompile Include="src\game\Shader.cpp" />
-    <ClCompile Include="src\game\sprite_renderer.cpp" />
-    <ClCompile Include="src\game\texture.cpp" />
-    <ClCompile Include="src\game\text_renderer.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\skeletal_animation\skeletal_animation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\ft2build.h" />
+    <ClInclude Include="includes\learnopengl\animation.h" />
+    <ClInclude Include="includes\learnopengl\animator.h" />
+    <ClInclude Include="includes\learnopengl\animdata.h" />
+    <ClInclude Include="includes\learnopengl\assimp_glm_helpers.h" />
+    <ClInclude Include="includes\learnopengl\bone.h" />
     <ClInclude Include="includes\learnopengl\camera.h" />
     <ClInclude Include="includes\learnopengl\mesh.h" />
     <ClInclude Include="includes\learnopengl\model.h" />
+    <ClInclude Include="includes\learnopengl\model_animation.h" />
     <ClInclude Include="includes\learnopengl\shader.h" />
     <ClInclude Include="includes\learnopengl\shader_m.h" />
     <ClInclude Include="includes\learnopengl\shader_s.h" />
     <ClInclude Include="includes\stb_image.h" />
-    <ClInclude Include="src\game\ball_object.h" />
-    <ClInclude Include="src\game\game.h" />
-    <ClInclude Include="src\game\game_level.h" />
-    <ClInclude Include="src\game\game_object.h" />
-    <ClInclude Include="src\game\particle_generator.h" />
-    <ClInclude Include="src\game\post_processor.h" />
-    <ClInclude Include="src\game\power_up.h" />
-    <ClInclude Include="src\game\resource_manager.h" />
-    <ClInclude Include="src\game\shader.h" />
-    <ClInclude Include="src\game\sprite_renderer.h" />
-    <ClInclude Include="src\game\texture.h" />
-    <ClInclude Include="src\game\text_renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\textures\awesomeface.png" />
