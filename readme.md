@@ -13,6 +13,7 @@ https://github.com/JoeyDeVries/LearnOpenGL
 https://www.learncpp.com/
 
 ### ����ʹ�ù�����վ
+https://glad.dav1d.de/
 
 https://docs.gl/
 
